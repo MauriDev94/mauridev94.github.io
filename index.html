@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mauricio Salinas · Backend Developer</title>
+  <meta name="description" content="Mauricio Salinas — Backend Developer. Python, FastAPI, Event-Driven Microservices, Clean Architecture.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%232b6cb0%22/><text x=%2250%22 y=%2266%22 font-size=%2250%22 font-family=%22system-ui%22 font-weight=%22700%22 fill=%22%23fff%22 text-anchor=%22middle%22>MS</text></svg>">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <span class="logo">MS</span>
+      <div class="topbar__controls">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+        <button id="lang-toggle" class="lang-btn" aria-label="Switch language" title="Switch language">EN / ES</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <h1>Mauricio Salinas</h1>
+        <p class="hero__title" data-i18n="hero.title">Backend Developer · Python · FastAPI · Event-Driven Microservices · Clean Architecture</p>
+        <p class="hero__pitch" data-i18n="hero.pitch">
+          I build production-grade REST APIs and event-driven systems with real test coverage —
+          applying Clean Architecture, DDD and TDD from day one.
+        </p>
+        <p class="hero__location" data-i18n="hero.location">Santiago, Chile · Remote · English C2 (EF SET 71/100)</p>
+        <div class="hero__actions">
+          <a id="cv-download" href="assets/CV_Mauricio_Salinas_EN.pdf" download class="btn btn--primary" data-i18n="hero.downloadCv">Download CV</a>
+          <a href="https://github.com/MauriDev94" target="_blank" rel="noopener" class="btn btn--ghost">GitHub</a>
+          <a href="https://linkedin.com/in/mauricio-salinas-rubio" target="_blank" rel="noopener" class="btn btn--ghost">LinkedIn</a>
+          <a href="mailto:maundrex@gmail.com" class="btn btn--ghost">Email</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 data-i18n="projects.heading">Featured Projects</h2>
+        <div class="cards">
+
+          <article class="card">
+            <h3>Event-Driven Orders</h3>
+            <p data-i18n="projects.eventDriven.desc">
+              E-commerce order processing system with 3 microservices (order, inventory, notification)
+              communicating exclusively through events via RabbitMQ. Idempotent consumers, atomic stock
+              reservation, dead-letter queues with retries, eventual consistency and end-to-end correlation IDs.
+              138 tests with real PostgreSQL (testcontainers).
+            </p>
+            <div class="badges">
+              <span class="badge">Python 3.12</span>
+              <span class="badge">FastAPI</span>
+              <span class="badge">RabbitMQ</span>
+              <span class="badge">PostgreSQL</span>
+              <span class="badge">Docker Compose</span>
+              <span class="badge">pytest</span>
+              <span class="badge">structlog</span>
+            </div>
+            <div class="card__actions">
+              <a href="https://github.com/MauriDev94/event-driven-orders" target="_blank" rel="noopener" class="btn btn--small" data-i18n="projects.repo">Repo</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>MedBook API</h3>
+            <p data-i18n="projects.medbook.desc">
+              REST API for medical appointment booking (Django + DRF) covering the full booking lifecycle
+              through a state machine (pending → confirmed → completed / cancelled / no-show). RBAC with
+              8 permission classes, atomic transactions to prevent race conditions, and 274 tests with
+              98.7% branch coverage (strict TDD).
+            </p>
+            <div class="badges">
+              <span class="badge">Django 5.1</span>
+              <span class="badge">DRF</span>
+              <span class="badge">PostgreSQL</span>
+              <span class="badge">simplejwt</span>
+              <span class="badge">drf-spectacular</span>
+              <span class="badge">pytest</span>
+              <span class="badge">Docker</span>
+            </div>
+            <div class="card__actions">
+              <a href="https://github.com/MauriDev94/MedBook" target="_blank" rel="noopener" class="btn btn--small" data-i18n="projects.repo">Repo</a>
+              <a href="https://medbook-oiio.onrender.com/api/docs" target="_blank" rel="noopener" class="btn btn--small btn--small-primary" data-i18n="projects.liveDemo">Live demo</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>API Monolith</h3>
+            <p data-i18n="projects.monolith.desc">
+              Modular monolith built with FastAPI and Django applying Clean Architecture, SOLID and DDD.
+              Independent modules: Auth, Users, Todos and Notifications. Advanced authentication with
+              JWT, OAuth2, OTP, password reset and Google login via SSO. PostgreSQL with SQLAlchemy and
+              Alembic migrations, deployed to production on Render.
+            </p>
+            <div class="badges">
+              <span class="badge">FastAPI</span>
+              <span class="badge">Django</span>
+              <span class="badge">PostgreSQL</span>
+              <span class="badge">SQLAlchemy</span>
+              <span class="badge">Alembic</span>
+              <span class="badge">JWT / OAuth2</span>
+              <span class="badge">Docker</span>
+            </div>
+            <div class="card__actions">
+              <a href="https://github.com/MauriDev94/Api_monolith" target="_blank" rel="noopener" class="btn btn--small" data-i18n="projects.repo">Repo</a>
+              <a href="https://api-monolith.onrender.com/docs" target="_blank" rel="noopener" class="btn btn--small btn--small-primary" data-i18n="projects.liveDemo">Live demo</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="section section--alt" id="stack">
+      <div class="container">
+        <h2 data-i18n="stack.heading">Tech Stack</h2>
+        <div class="stack-grid">
+
+          <div class="stack-group">
+            <h3 data-i18n="stack.languages">Languages</h3>
+            <div class="badges">
+              <span class="badge">Python</span>
+              <span class="badge">SQL</span>
+            </div>
+          </div>
+
+          <div class="stack-group">
+            <h3 data-i18n="stack.frameworks">Frameworks</h3>
+            <div class="badges">
+              <span class="badge">FastAPI</span>
+              <span class="badge">Django</span>
+              <span class="badge">Django REST Framework</span>
+              <span class="badge">Pydantic v2</span>
+            </div>
+          </div>
+
+          <div class="stack-group">
+            <h3 data-i18n="stack.messaging">Messaging / Event-Driven</h3>
+            <div class="badges">
+              <span class="badge">RabbitMQ (aio-pika)</span>
+              <span class="badge">Idempotency</span>
+              <span class="badge">Dead-letter queues</span>
+              <span class="badge">Eventual consistency</span>
+            </div>
+          </div>
+
+          <div class="stack-group">
+            <h3 data-i18n="stack.data">Data</h3>
+            <div class="badges">
+              <span class="badge">PostgreSQL</span>
+              <span class="badge">MongoDB</span>
+              <span class="badge">SQLAlchemy</span>
+              <span class="badge">Alembic</span>
+            </div>
+          </div>
+
+          <div class="stack-group">
+            <h3 data-i18n="stack.testing">Testing</h3>
+            <div class="badges">
+              <span class="badge">pytest</span>
+              <span class="badge">pytest-django</span>
+              <span class="badge">TDD</span>
+              <span class="badge">factory-boy</span>
+              <span class="badge">testcontainers</span>
+              <span class="badge">coverage.py</span>
+            </div>
+          </div>
+
+          <div class="stack-group">
+            <h3 data-i18n="stack.devops">DevOps</h3>
+            <div class="badges">
+              <span class="badge">Docker</span>
+              <span class="badge">GitHub Actions</span>
+              <span class="badge">Git</span>
+              <span class="badge">Render</span>
+              <span class="badge">Codecov</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 data-i18n="about.heading">About Me</h2>
+        <p data-i18n="about.text">
+          I'm drawn to backend systems because that's where the real engineering problems live:
+          concurrency, consistency, failure handling. I focus on distributed systems and APIs that
+          stay correct under pressure — not just code that runs once on a happy path, but systems
+          backed by tests, clear architecture and observability so a team can trust and extend them.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER / CONTACT -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Mauricio Salinas</p>
+      <div class="footer__links">
+        <a href="mailto:maundrex@gmail.com">maundrex@gmail.com</a>
+        <a href="https://linkedin.com/in/mauricio-salinas-rubio" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/MauriDev94" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
