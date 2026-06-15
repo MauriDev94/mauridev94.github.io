@@ -71,6 +71,8 @@ function applyTheme(theme) {
   localStorage.setItem("theme", theme);
 }
 
+console.log("%cwow. such backend. very clean architecture. 🐕", "color:#2b6cb0; font-weight:bold; font-size:14px;");
+
 document.addEventListener("DOMContentLoaded", () => {
   let currentLang = detectInitialLanguage();
   applyLanguage(currentLang);
