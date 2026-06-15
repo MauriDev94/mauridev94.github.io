@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
     applyLanguage(currentLang);
   });
 
-  const storedTheme = localStorage.getItem("theme") || "light";
+  const storedTheme = localStorage.getItem("theme") || "dark";
   applyTheme(storedTheme);
 
   document.getElementById("theme-toggle").addEventListener("click", () => {
