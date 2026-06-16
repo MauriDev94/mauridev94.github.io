@@ -7,9 +7,9 @@ const translations = {
     "projects.heading": "Featured Projects",
     "projects.repo": "Repo",
     "projects.liveDemo": "Live demo",
-    "projects.eventDriven.desc": "E-commerce order processing system with 3 microservices (order, inventory, notification) communicating exclusively through events via RabbitMQ. Idempotent consumers, atomic stock reservation, dead-letter queues with retries, eventual consistency and end-to-end correlation IDs. 138 tests with real PostgreSQL (testcontainers).",
-    "projects.medbook.desc": "REST API for medical appointment booking (Django + DRF) covering the full booking lifecycle through a state machine (pending → confirmed → completed / cancelled / no-show). RBAC with 8 permission classes, atomic transactions to prevent race conditions, and 274 tests with 98.7% branch coverage (strict TDD).",
-    "projects.monolith.desc": "Modular monolith built with FastAPI and Django applying Clean Architecture, SOLID and DDD. Independent modules: Auth, Users, Todos and Notifications. Advanced authentication with JWT, OAuth2, OTP, password reset and Google login via SSO. PostgreSQL with SQLAlchemy and Alembic migrations, deployed to production on Render.",
+    "projects.eventDriven.desc": "3 microservices communicating exclusively via RabbitMQ — idempotent consumers, dead-letter queues with retries, eventual consistency, and end-to-end correlation IDs. 138 tests with real PostgreSQL.",
+    "projects.medbook.desc": "Medical appointment API (Django + DRF) with a full state machine, object-level RBAC and atomic transactions to prevent race conditions. 274 tests · 98.7% branch coverage.",
+    "projects.monolith.desc": "Modular monolith (FastAPI + Django) with Clean Architecture and DDD. JWT, OAuth2, OTP and Google SSO — deployed to production on Render.",
     "stack.heading": "Tech Stack",
     "stack.languages": "Languages",
     "stack.frameworks": "Frameworks",
@@ -18,7 +18,7 @@ const translations = {
     "stack.testing": "Testing",
     "stack.devops": "DevOps",
     "about.heading": "About Me",
-    "about.text": "I'm drawn to backend systems because that's where the real engineering problems live: concurrency, consistency, failure handling. I focus on distributed systems and APIs that stay correct under pressure — not just code that runs once on a happy path, but systems backed by tests, clear architecture and observability so a team can trust and extend them."
+    "about.text": "I build backend systems that hold up under pressure — distributed, tested and observable. Real coverage, clear architecture, and code a team can actually trust."
   },
   es: {
     "hero.title": "Backend Developer · Python · FastAPI · Microservicios Event-Driven · Clean Architecture",
@@ -28,9 +28,9 @@ const translations = {
     "projects.heading": "Proyectos Destacados",
     "projects.repo": "Repo",
     "projects.liveDemo": "Demo en vivo",
-    "projects.eventDriven.desc": "Sistema de procesamiento de órdenes e-commerce con 3 microservicios (order, inventory, notification) que se comunican exclusivamente por eventos vía RabbitMQ. Consumers idempotentes, reserva atómica de stock, dead-letter queues con retries, eventual consistency y correlation IDs end-to-end. 138 tests con PostgreSQL real (testcontainers).",
-    "projects.medbook.desc": "API REST para reservas médicas (Django + DRF) que cubre el ciclo completo de agendamiento mediante una máquina de estados (pending → confirmed → completed / cancelled / no-show). RBAC con 8 clases de permisos, transacciones atómicas para prevenir race conditions, y 274 tests con 98.7% de branch coverage (TDD estricto).",
-    "projects.monolith.desc": "Monolito modular construido con FastAPI y Django aplicando Clean Architecture, SOLID y DDD. Módulos independientes: Auth, Users, Todos y Notifications. Autenticación avanzada con JWT, OAuth2, OTP, reset de contraseña y Google login vía SSO. PostgreSQL con SQLAlchemy y migraciones Alembic, desplegado en producción en Render.",
+    "projects.eventDriven.desc": "3 microservicios conectados exclusivamente por eventos vía RabbitMQ — consumers idempotentes, dead-letter queues con retries, eventual consistency y correlation IDs end-to-end. 138 tests con PostgreSQL real.",
+    "projects.medbook.desc": "API de citas médicas (Django + DRF) con máquina de estados completa, RBAC por objeto y transacciones atómicas para prevenir race conditions. 274 tests · 98.7% branch coverage.",
+    "projects.monolith.desc": "Monolito modular (FastAPI + Django) con Clean Architecture y DDD. JWT, OAuth2, OTP y Google SSO — desplegado en producción en Render.",
     "stack.heading": "Tech Stack",
     "stack.languages": "Lenguajes",
     "stack.frameworks": "Frameworks",
@@ -39,7 +39,7 @@ const translations = {
     "stack.testing": "Testing",
     "stack.devops": "DevOps",
     "about.heading": "Sobre Mí",
-    "about.text": "Me atraen los sistemas backend porque ahí están los problemas de ingeniería de verdad: concurrencia, consistencia, manejo de fallos. Me enfoco en sistemas distribuidos y APIs que se mantienen correctas bajo presión — no solo código que corre una vez en el happy path, sino sistemas respaldados por tests, arquitectura clara y observabilidad para que un equipo pueda confiar en ellos y extenderlos."
+    "about.text": "Construyo sistemas backend que aguantan bajo presión — distribuidos, testeados y observables. Cobertura real, arquitectura clara y código en el que un equipo puede confiar."
   }
 };
 

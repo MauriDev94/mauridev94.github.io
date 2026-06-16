@@ -51,10 +51,7 @@
           <article class="card">
             <h3>Event-Driven Orders</h3>
             <p data-i18n="projects.eventDriven.desc">
-              E-commerce order processing system with 3 microservices (order, inventory, notification)
-              communicating exclusively through events via RabbitMQ. Idempotent consumers, atomic stock
-              reservation, dead-letter queues with retries, eventual consistency and end-to-end correlation IDs.
-              138 tests with real PostgreSQL (testcontainers).
+              3 microservices communicating exclusively via RabbitMQ — idempotent consumers, dead-letter queues with retries, eventual consistency, and end-to-end correlation IDs. 138 tests with real PostgreSQL.
             </p>
             <div class="badges">
               <span class="badge">Python 3.12</span>
@@ -73,10 +70,7 @@
           <article class="card">
             <h3>MedBook API</h3>
             <p data-i18n="projects.medbook.desc">
-              REST API for medical appointment booking (Django + DRF) covering the full booking lifecycle
-              through a state machine (pending → confirmed → completed / cancelled / no-show). RBAC with
-              8 permission classes, atomic transactions to prevent race conditions, and 274 tests with
-              98.7% branch coverage (strict TDD).
+              Medical appointment API (Django + DRF) with a full state machine, object-level RBAC and atomic transactions to prevent race conditions. 274 tests · 98.7% branch coverage.
             </p>
             <div class="badges">
               <span class="badge">Django 5.1</span>
@@ -96,10 +90,7 @@
           <article class="card">
             <h3>API Monolith</h3>
             <p data-i18n="projects.monolith.desc">
-              Modular monolith built with FastAPI and Django applying Clean Architecture, SOLID and DDD.
-              Independent modules: Auth, Users, Todos and Notifications. Advanced authentication with
-              JWT, OAuth2, OTP, password reset and Google login via SSO. PostgreSQL with SQLAlchemy and
-              Alembic migrations, deployed to production on Render.
+              Modular monolith (FastAPI + Django) with Clean Architecture and DDD. JWT, OAuth2, OTP and Google SSO — deployed to production on Render.
             </p>
             <div class="badges">
               <span class="badge">FastAPI</span>
@@ -196,10 +187,7 @@
       <div class="container">
         <h2 data-i18n="about.heading">About Me</h2>
         <p data-i18n="about.text">
-          I'm drawn to backend systems because that's where the real engineering problems live:
-          concurrency, consistency, failure handling. I focus on distributed systems and APIs that
-          stay correct under pressure — not just code that runs once on a happy path, but systems
-          backed by tests, clear architecture and observability so a team can trust and extend them.
+          I build backend systems that hold up under pressure — distributed, tested and observable. Real coverage, clear architecture, and code a team can actually trust.
         </p>
       </div>
     </section>
