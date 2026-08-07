@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mauricio Salinas — Back-end Developer</title>
+<style>
+  @page { size: A4; margin: 12mm 14mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 9.6pt;
+    line-height: 1.35;
+    color: #1f2933;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  h1 {
+    font-size: 21pt;
+    font-weight: 700;
+    color: #102a43;
+    letter-spacing: -0.3px;
+  }
+  .title {
+    font-size: 10.8pt;
+    font-weight: 600;
+    color: #2b6cb0;
+    margin-top: 2px;
+  }
+  .contact {
+    font-size: 9pt;
+    color: #486581;
+    margin-top: 5px;
+    line-height: 1.5;
+  }
+  .contact a { color: #2b6cb0; text-decoration: none; }
+  .contact b { color: #243b53; }
+  h2 {
+    font-size: 11pt;
+    font-weight: 700;
+    color: #102a43;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    border-bottom: 1.5px solid #2b6cb0;
+    padding-bottom: 2px;
+    margin: 11px 0 5px;
+  }
+  h3 {
+    font-size: 10.6pt;
+    font-weight: 700;
+    color: #243b53;
+    margin-top: 9px;
+  }
+  .meta {
+    font-size: 8.8pt;
+    font-style: italic;
+    color: #627d98;
+    margin: 1px 0 3px;
+  }
+  .stack {
+    font-size: 8.4pt;
+    font-family: "Consolas", "SF Mono", monospace;
+    color: #486581;
+    background: #f0f4f8;
+    padding: 3px 6px;
+    border-radius: 3px;
+    margin: 3px 0 4px;
+    display: block;
+  }
+  .metrics {
+    font-size: 9pt;
+    font-weight: 700;
+    color: #2b6cb0;
+    background: #ebf4fb;
+    border-left: 3px solid #2b6cb0;
+    padding: 3px 7px;
+    margin: 3px 0 4px;
+    display: block;
+  }
+  p { margin: 3px 0; }
+  ul { margin: 3px 0 3px 16px; }
+  li { margin: 2px 0; }
+  .lede { color: #334e68; margin-bottom: 3px; }
+  .links { font-size: 9pt; margin-top: 4px; }
+  .links a { color: #2b6cb0; text-decoration: none; font-weight: 600; }
+  strong { color: #102a43; }
+  .skills li { margin: 3px 0; }
+  .summary { color: #334e68; text-align: justify; }
+</style>
+</head>
+<body>
+
+  <h1>Mauricio Salinas</h1>
+  <div class="title">Back-end Developer · Python · FastAPI · Event-Driven Microservices · Clean Architecture</div>
+  <div class="contact">
+    Santiago, Chile · maundrex@gmail.com · +56 9 4758 6414<br>
+    <a href="https://mauridev94.github.io"><b>mauridev94.github.io</b></a> ·
+    <a href="https://github.com/MauriDev94">github.com/MauriDev94</a> ·
+    <a href="https://linkedin.com/in/mauricio-salinas-rubio">linkedin.com/in/mauricio-salinas-rubio</a> ·
+    <b>English C2 (EF SET 71/100)</b> · Open to remote work
+  </div>
+
+  <h2>Summary</h2>
+  <p class="summary">
+    Backend developer focused on <strong>Python</strong>, <strong>REST APIs</strong>, and <strong>event-driven microservices</strong>.
+    I build services with <strong>FastAPI</strong> and <strong>Django/DRF</strong> applying <strong>SOLID, Clean Architecture, DDD, and TDD</strong>
+    — spec first, implementation backed by real coverage: <strong>274 tests at 98.7% branch coverage</strong> in my main project and
+    <strong>138 tests</strong> in the microservices system, with integration run via <strong>testcontainers</strong>. Experienced in <strong>PostgreSQL</strong>,
+    <strong>messaging with RabbitMQ</strong> (idempotency, dead-letter queues, eventual consistency), advanced authentication (JWT/OAuth2/OTP/SSO),
+    <strong>observability</strong> (JSON logging + correlation IDs), and <strong>CI/CD pipelines with GitHub Actions</strong>.
+    English C2 for technical documentation and remote teamwork.
+  </p>
+
+  <h2>Experience</h2>
+
+  <h3>Backend Development — Personal Projects</h3>
+  <div class="meta">Santiago, Chile · Apr 2025 – Present</div>
+  <ul>
+    <li>Designed and built <strong>production-grade REST APIs</strong> with FastAPI and Django/DRF applying Clean Architecture, SOLID, DDD, and TDD.</li>
+    <li>Designed <strong>event-driven distributed systems</strong> with RabbitMQ: idempotency, dead-letter queues, retries with backoff, and eventual consistency across services.</li>
+    <li>Built <strong>CI/CD</strong> pipelines with GitHub Actions (lint, type-checking, tests against real PostgreSQL, enforced coverage) and continuous deployment to Render.</li>
+  </ul>
+
+  <h3>Support Analyst</h3>
+  <div class="meta">Cadaques (Domino) · Santiago, Chile · Apr 2023 – Jul 2024</div>
+  <ul>
+    <li><strong>Analyzed and resolved incidents</strong> in production systems, performing root-cause diagnosis.</li>
+    <li>Queried and maintained <strong>SQL</strong> databases in production; strategic reporting for the operations team.</li>
+    <li>Built <strong>Python scripts</strong> to automate operational processes, reducing repetitive manual work.</li>
+    <li>Coordinated with the development team on defect escalation and follow-up through resolution.</li>
+    <li>Monitored and configured enterprise network infrastructure.</li>
+  </ul>
+
+  <h2>Projects</h2>
+
+  <h3>Event-Driven Orders — Microservices with RabbitMQ</h3>
+  <code class="metrics">3 microservices · 138 tests · 85–92% coverage per service</code>
+  <code class="stack">Python 3.12 · FastAPI · RabbitMQ (aio-pika) · PostgreSQL 16 · Pydantic v2 · Docker Compose · pytest · testcontainers · structlog · GitHub Actions</code>
+  <p class="lede">E-commerce order processing system with <strong>3 microservices</strong> (order, inventory, notification) communicating exclusively through <strong>events</strong> via RabbitMQ, applying Clean Architecture + DDD in each service.</p>
+  <ul>
+    <li><strong>Idempotency</strong> in consumers (<code>processed_events</code> with <code>INSERT ... ON CONFLICT DO NOTHING</code>): a redelivered event does not duplicate business effects.</li>
+    <li><strong>Atomicity anti race-condition</strong> on stock reservation (conditional <code>UPDATE</code> + row-level locking + <code>SAVEPOINT</code>).</li>
+    <li><strong>Dead-letter queues + retries with backoff</strong> (3 stages) with transient/permanent failure classification.</li>
+    <li><strong>Eventual consistency</strong> via event choreography, no distributed transaction.</li>
+    <li><strong>Observability</strong>: structured JSON logging + <strong>end-to-end correlation ID</strong> (HTTP → events → 3 services) and robust broker reconnection.</li>
+    <li><strong>database-per-service</strong>; <strong>138 tests</strong>, <strong>85–92% coverage</strong> per service — integration against <strong>real PostgreSQL via testcontainers</strong> (SQLite lacks the row-level locking needed to verify concurrency).</li>
+    <li><strong>CI/CD</strong>: GitHub Actions with per-service matrix (lint + mypy + tests).</li>
+  </ul>
+  <div class="links">Repo: <a href="https://github.com/MauriDev94/event-driven-orders">github.com/MauriDev94/event-driven-orders</a></div>
+
+  <h3>MedBook API — Medical appointment booking with Django + DRF</h3>
+  <code class="metrics">274 tests · 98.7% branch coverage · 0 failures · strict TDD</code>
+  <code class="stack">Python 3.12 · Django 5.1 · DRF · PostgreSQL 16 · simplejwt · drf-spectacular · pytest · factory-boy · Docker · GitHub Actions · Codecov</code>
+  <p class="lede">REST API for managing medical appointments, covering the full booking lifecycle: doctors publish schedules, the system generates concrete slots, and patients book them, moving through a <strong>state machine</strong> (pending → confirmed → completed / cancelled / no-show).</p>
+  <ul>
+    <li><strong>274 tests · 98.7% branch coverage · 0 failures</strong> — built with <strong>strict TDD</strong> (Red-Green-Refactor) and <code>--cov-fail-under</code> enforced in CI.</li>
+    <li><strong>RBAC</strong> with 8 permission classes and object-level role-based access (doctor/patient/admin).</li>
+    <li><strong>Atomic transactions + atomic UPDATE</strong> to prevent <em>race conditions</em> when booking concurrent slots.</li>
+    <li>ORM optimization: <code>select_related</code>/<code>prefetch_related</code> (zero N+1), <code>annotate()</code>/<code>Q()</code> for queries.</li>
+    <li><strong>OpenAPI 3</strong> documentation with drf-spectacular (Swagger UI) and email notifications (django-anymail/Resend).</li>
+    <li><strong>Rate limiting</strong> (AnonRateThrottle) for brute-force protection on login.</li>
+    <li><strong>CI/CD</strong>: GitHub Actions with lint (ruff), tests against real PostgreSQL, and coverage to Codecov.</li>
+  </ul>
+  <div class="links">Repo: <a href="https://github.com/MauriDev94/MedBook">github.com/MauriDev94/MedBook</a> · Live (Swagger UI): <a href="https://medbook-oiio.onrender.com/api/docs/">medbook-oiio.onrender.com/api/docs</a></div>
+
+  <h3>API Monolith — Modular monolith with Clean Architecture</h3>
+  <code class="metrics">3 domain modules · JWT/OAuth2/OTP/SSO auth · branch coverage gated at 82%</code>
+  <code class="stack">Python · FastAPI · PostgreSQL · SQLAlchemy · Alembic · Pytest · Docker · JWT · OAuth2 · OTP · SSO · GitHub Actions · Render</code>
+  <p class="lede">REST API built with <strong>FastAPI</strong> applying Clean Architecture, SOLID, and DDD. <strong>3 domain modules</strong> (Auth, Users, Todos), each with its own <code>domain / application / infrastructure / presentation / di</code> layers. Auth includes JWT/OAuth2, OTP, password reset, and Google login via SSO.</p>
+  <ul>
+    <li>Each module defines its <strong>own contracts</strong> (<code>application/contracts/</code>) under a strict dependency rule: <strong>the domain has zero framework dependencies</strong> and infrastructure is swappable without touching business logic.</li>
+    <li>Cross-cutting middleware (logging, error handling, security); PostgreSQL schemas with <strong>SQLAlchemy</strong> and migrations with <strong>Alembic</strong>.</li>
+    <li><strong>CI/CD</strong> across two jobs: <em>quality</em> (ruff, black, mypy) and <em>tests</em> against real PostgreSQL with <code>--cov-branch --cov-fail-under=82</code>. <strong>Deployed to production on Render.</strong></li>
+  </ul>
+  <div class="links">Repo: <a href="https://github.com/MauriDev94/Api_monolith">github.com/MauriDev94/Api_monolith</a> · Live (Swagger UI): <a href="https://api-monolith.onrender.com/docs">api-monolith.onrender.com/docs</a></div>
+
+  <h2>Technical Skills</h2>
+  <ul class="skills">
+    <li><strong>Languages:</strong> Python, SQL</li>
+    <li><strong>Frameworks:</strong> FastAPI, Django, Django REST Framework (DRF)</li>
+    <li><strong>Messaging / event-driven:</strong> RabbitMQ (aio-pika), idempotency, dead-letter queues, retries with backoff, eventual consistency</li>
+    <li><strong>Databases:</strong> PostgreSQL, MongoDB — schema design and queries, ORM optimization (zero N+1)</li>
+    <li><strong>ORM &amp; migrations:</strong> SQLAlchemy, Alembic, Django ORM</li>
+    <li><strong>Testing:</strong> Pytest, pytest-django, TDD, factory-boy, testcontainers, unit &amp; integration tests, coverage.py, CI quality gates</li>
+    <li><strong>Auth &amp; security:</strong> JWT, OAuth2, OTP, SSO, Google Login, RBAC, rate limiting (throttling)</li>
+    <li><strong>API:</strong> REST, OpenAPI 3 / Swagger (drf-spectacular), endpoint design, versioning</li>
+    <li><strong>CI/CD:</strong> GitHub Actions (lint, tests, coverage, artifacts), Codecov, pre-commit</li>
+    <li><strong>DevOps:</strong> Docker, Git, GitHub, Render (continuous deployment)</li>
+    <li><strong>Observability:</strong> structlog (JSON logging), end-to-end correlation IDs</li>
+    <li><strong>Quality &amp; methodologies:</strong> SOLID, design patterns, Clean Code, ruff, black · Clean Architecture, DDD, TDD, SDD, event-driven microservices, database-per-service, Modular Monolith</li>
+  </ul>
+
+  <h2>Languages</h2>
+  <ul>
+    <li><strong>Spanish:</strong> Native</li>
+    <li><strong>English:</strong> <strong>C2 Proficient — EF SET 71/100</strong> (technical documentation and communication with remote teams)</li>
+  </ul>
+
+  <h2>Education</h2>
+  <p><strong>Programmer Analyst</strong> — Instituto Profesional Santo Tomás · Santiago, Chile · Mar 2021 – Jul 2025</p>
+
+</body>
+</html>

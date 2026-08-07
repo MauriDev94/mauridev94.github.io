@@ -1,0 +1,15 @@
+# Variantes QA del CV: no se publican.
+# El sitio es de backend (index.html lo dice en el title, el hero y el pitch), y
+# este repo es PUBLICO por obligacion - GitHub Pages de usuario no admite repo
+# privado. Todo lo que se commitea queda servido en mauridev94.github.io.
+# La fuente de las variantes QA vive fuera del repo, en D:\descargas\cv.
+cv/*_QA*
+
+# PDFs generados por cv/build-pdf.ps1.
+# Los CV de backend NO caen aca: el script los escribe directo en assets/ y esos
+# si van versionados, porque son los que sirve el sitio.
+cv/*.pdf
+
+# Respaldos del editor. Git es el respaldo ahora.
+*.bak
+*.prev
