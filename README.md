@@ -13,25 +13,27 @@ portfolio-site/
 ├── index.html
 ├── css/styles.css
 ├── js/main.js
-├── assets/             # CV en PDF (ES/EN) — generados, no editar a mano
-├── cv/                 # fuente de los CV + build-pdf.ps1 (ver cv/README.md)
+├── assets/             # CV en PDF (ES/EN) — generados fuera del repo, no editar a mano
 └── README.md
 ```
 
 ## Actualizar el CV
 
-La fuente vive en `cv/` (los `.html`, **no** los `.md`). Editas el HTML, corres el
-build y los PDF de backend caen solos en `assets/`:
+Los PDF de `assets/` son los CV de backend. Se generan fuera de este repo, con el
+generador de CV (`uv run build.py`, en la carpeta local `perfil/cv`), y se copian
+acá con estos nombres:
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\cv\build-pdf.ps1
-```
+| Generado | En el sitio |
+|---|---|
+| `CV_Mauricio_Salinas_Backend_ES.pdf` | `assets/CV_Mauricio_Salinas.pdf` |
+| `CV_Mauricio_Salinas_Backend_EN.pdf` | `assets/CV_Mauricio_Salinas_EN.pdf` |
 
-Los nombres de archivo importan: `js/main.js` mapea `CV_Mauricio_Salinas.pdf` (ES)
-y `CV_Mauricio_Salinas_EN.pdf` (EN) al botón de descarga según el idioma activo.
-Si renombras un PDF, actualiza `cvFiles` en `js/main.js`.
+`js/main.js` mapea esos nombres al botón de descarga según el idioma activo. Si
+renombras un PDF, actualiza `cvFiles` en `js/main.js`.
 
-Detalle completo del pipeline en [`cv/README.md`](cv/README.md).
+Solo se publican las variantes de backend: el sitio es de backend y este repo es
+público por obligación (GitHub Pages de usuario no admite repo privado), así que
+todo lo que se commitea acá queda servido en `mauridev94.github.io`.
 
 ## Publicar en GitHub Pages
 
