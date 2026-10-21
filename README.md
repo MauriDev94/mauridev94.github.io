@@ -19,14 +19,16 @@ portfolio-site/
 
 ## Actualizar el CV
 
-Los PDF de `assets/` son los CV de backend. Se generan fuera de este repo, con el
-generador de CV (`uv run build.py`, en la carpeta local `perfil/cv`), y se copian
-acá con estos nombres:
+Los PDF de `assets/` son la versión pública del CV de backend: la misma de las
+postulaciones, pero **sin teléfono**, porque cualquier PDF publicado acá queda al
+alcance de bots que juntan contactos. Se generan fuera de este repo, con el
+generador de CV (`uv run build.py`, en la carpeta local `perfil/cv`), que los deja
+en `dist/public/` con los nombres que espera el sitio:
 
 | Generado | En el sitio |
 |---|---|
-| `CV_Mauricio_Salinas_Backend_ES.pdf` | `assets/CV_Mauricio_Salinas.pdf` |
-| `CV_Mauricio_Salinas_Backend_EN.pdf` | `assets/CV_Mauricio_Salinas_EN.pdf` |
+| `dist/public/CV_Mauricio_Salinas.pdf` | `assets/CV_Mauricio_Salinas.pdf` |
+| `dist/public/CV_Mauricio_Salinas_EN.pdf` | `assets/CV_Mauricio_Salinas_EN.pdf` |
 
 `js/main.js` mapea esos nombres al botón de descarga según el idioma activo. Si
 renombras un PDF, actualiza `cvFiles` en `js/main.js`.
