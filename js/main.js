@@ -2,7 +2,7 @@ const translations = {
   en: {
     "hero.title": "Backend Developer · Python · FastAPI · Event-Driven Microservices · Clean Architecture",
     "hero.pitch": "I build REST APIs and event-driven systems with real test coverage — applying Clean Architecture, DDD and TDD from day one.",
-    "hero.location": "Santiago, Chile · Remote · English C2 (EF SET 71/100)",
+    "hero.location": "Santiago, Chile · Remote · Advanced English: C2 reading & listening (EF SET 71/100), B2+ speaking",
     "hero.downloadCv": "Download CV",
     "projects.heading": "Featured Projects",
     "projects.repo": "Repo",
@@ -24,7 +24,7 @@ const translations = {
   es: {
     "hero.title": "Backend Developer · Python · FastAPI · Microservicios Event-Driven · Clean Architecture",
     "hero.pitch": "Construyo APIs REST y sistemas event-driven con cobertura de tests real — aplicando Clean Architecture, DDD y TDD desde el día uno.",
-    "hero.location": "Santiago, Chile · Remoto · Inglés C2 (EF SET 71/100)",
+    "hero.location": "Santiago, Chile · Remoto · Inglés avanzado: C2 en lectura y comprensión auditiva (EF SET 71/100), conversación B2+",
     "hero.downloadCv": "Descargar CV",
     "projects.heading": "Proyectos Destacados",
     "projects.repo": "Repo",
