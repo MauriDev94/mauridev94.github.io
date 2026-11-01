@@ -51,16 +51,17 @@
           <article class="card">
             <h3>Event-Driven Orders</h3>
             <p data-i18n="projects.eventDriven.desc">
-              3 microservices communicating exclusively via RabbitMQ — idempotent consumers, dead-letter queues with retries, eventual consistency, and end-to-end correlation IDs. 138 tests with real PostgreSQL.
+              4 microservices communicating exclusively via RabbitMQ — three in Python/FastAPI and one in NestJS/TypeScript with an AI assistant: an LLM agent (Gemini) with read-only tools whose citations are built by the server, not the model. Idempotent consumers, dead-letter queues with retries and Redis rate limiting. 367 tests against real infrastructure.
             </p>
             <div class="badges">
               <span class="badge">Python 3.12</span>
               <span class="badge">FastAPI</span>
+              <span class="badge">NestJS</span>
               <span class="badge">RabbitMQ</span>
               <span class="badge">PostgreSQL</span>
+              <span class="badge">Redis</span>
+              <span class="badge">Gemini</span>
               <span class="badge">Docker Compose</span>
-              <span class="badge">pytest</span>
-              <span class="badge">structlog</span>
             </div>
             <div class="card__actions">
               <a href="https://github.com/MauriDev94/event-driven-orders" target="_blank" rel="noopener" class="btn btn--small" data-i18n="projects.repo">Repo</a>
@@ -133,6 +134,7 @@
               <span class="badge">FastAPI</span>
               <span class="badge">Django</span>
               <span class="badge">Django REST Framework</span>
+              <span class="badge">NestJS</span>
               <span class="badge">Pydantic v2</span>
             </div>
           </div>
@@ -148,11 +150,22 @@
           </div>
 
           <div class="stack-group">
+            <h3 data-i18n="stack.ai">Applied AI</h3>
+            <div class="badges">
+              <span class="badge">LLM agents</span>
+              <span class="badge">Tool calling</span>
+              <span class="badge">Gemini API</span>
+              <span class="badge">Claude Code</span>
+            </div>
+          </div>
+
+          <div class="stack-group">
             <h3 data-i18n="stack.data">Data</h3>
             <div class="badges">
               <span class="badge">PostgreSQL</span>
               <span class="badge">SQLAlchemy</span>
               <span class="badge">Alembic</span>
+              <span class="badge">Redis</span>
             </div>
           </div>
 
@@ -161,6 +174,7 @@
             <div class="badges">
               <span class="badge">pytest</span>
               <span class="badge">pytest-django</span>
+              <span class="badge">Vitest</span>
               <span class="badge">TDD</span>
               <span class="badge">factory-boy</span>
               <span class="badge">testcontainers</span>
